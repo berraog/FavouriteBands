@@ -1,0 +1,17 @@
+﻿@using FavouriteBands.Models
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <h1>All of our favourite bands minus a few...</h1>
+    <ul>
+        @foreach (Band item in ViewBag.Bands)
+        {
+            <li><a href="details/@(item.Id-1)">@item.Name</a></li>
+        }
+    </ul>
+</body>
+</html>
