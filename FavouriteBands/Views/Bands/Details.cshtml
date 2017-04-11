@@ -3,9 +3,13 @@
 <html>
 <head>
     <title>Details</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
 </head>
+
 <body>
     <h1>Band Details</h1>
     <h2>@ViewBag.Band.Name</h2>
+    <p>@ViewBag.Band.Description</p>
+    <img src=@("/img/" + ViewBag.Band.Id +".jpg") alt="Alternate Text" />
 </body>
 </html>
